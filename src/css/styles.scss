@@ -1,0 +1,118 @@
+@mixin fullsize {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin compact {
+  padding: 0;
+  height: 60px;
+}
+
+@mixin shadow {
+  box-shadow: 2px 2px 20px 10px rgba(114, 111, 111, 0.4);
+}
+
+
+$primarycolor: #62C4E3;
+$secondarycolor: rgb(48, 77, 204);
+
+
+
+
+body {
+  background-image: url("../images/SilverBackground.png");
+}
+
+header {
+  height: 10vh;
+  background-color: $secondarycolor;
+  img {
+    padding: 1%;
+    height: 100%;
+    cursor: pointer;
+  }
+}
+
+h1.title {
+  color: white;
+  background-color: $primarycolor;
+  padding: 0.5rem;
+}
+
+#registration {
+
+  h1, h2, h3, h4 {
+  text-align: center;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  h2 {
+    color: $primarycolor;
+  }
+
+  div#form {
+
+    input[type=text]{
+    @include fullsize();
+    padding-left: 10px;
+    }
+
+    input[type=text]:focus {
+      box-shadow: 0 0 20px $primarycolor;
+      border: 1px solid $primarycolor;
+    }
+
+    .container-fluid {
+      @include shadow();
+      .row {
+        .col-6, .col-12 {
+          @include compact();
+        }
+      }
+    }
+  }
+
+
+  .col-6.main {
+    padding: 6% 8%;
+
+    .container-fluid {
+    @include shadow();
+      .row .col-12 {
+        background-color: white;
+      }
+      .row .col-12.title {
+        background-color: $secondarycolor;
+      }
+    }
+  }
+
+}
+
+#panel {
+  @include shadow();
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  button {
+    margin: 15px;
+  }
+  img {
+    height: 15vh;
+    position: relative;
+    margin-left : 8vw;
+  }
+}
+
+
+.container-fluid {
+  height: auto;
+}
+
+label {
+  position: absolute;
+  left: 5px;
+}

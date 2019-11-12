@@ -1,0 +1,83 @@
+body {
+  background-image: url("../images/SilverBackground.png");
+}
+
+header {
+  height: 10vh;
+  background-color: #304dcc;
+}
+header img {
+  padding: 1%;
+  height: 100%;
+  cursor: pointer;
+}
+
+h1.title {
+  color: white;
+  background-color: #62C4E3;
+  padding: 0.5rem;
+}
+
+#registration h1, #registration h2, #registration h3, #registration h4 {
+  text-align: center;
+}
+#registration h1 {
+  color: white;
+}
+#registration h2 {
+  color: #62C4E3;
+}
+#registration div#form input[type=text] {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+}
+#registration div#form input[type=text]:focus {
+  box-shadow: 0 0 20px #62C4E3;
+  border: 1px solid #62C4E3;
+}
+#registration div#form .container-fluid {
+  box-shadow: 2px 2px 20px 10px rgba(114, 111, 111, 0.4);
+}
+#registration div#form .container-fluid .row .col-6, #registration div#form .container-fluid .row .col-12 {
+  padding: 0;
+  height: 60px;
+}
+#registration .col-6.main {
+  padding: 6% 8%;
+}
+#registration .col-6.main .container-fluid {
+  box-shadow: 2px 2px 20px 10px rgba(114, 111, 111, 0.4);
+}
+#registration .col-6.main .container-fluid .row .col-12 {
+  background-color: white;
+}
+#registration .col-6.main .container-fluid .row .col-12.title {
+  background-color: #304dcc;
+}
+
+#panel {
+  box-shadow: 2px 2px 20px 10px rgba(114, 111, 111, 0.4);
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+#panel button {
+  margin: 15px;
+}
+#panel img {
+  height: 15vh;
+  position: relative;
+  margin-left: 8vw;
+}
+
+.container-fluid {
+  height: auto;
+}
+
+label {
+  position: absolute;
+  left: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */
